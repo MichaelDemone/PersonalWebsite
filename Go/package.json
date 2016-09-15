@@ -1,0 +1,30 @@
+{
+  "name": "GoWebapp",
+  "version": "1.0.0",
+  "description": "Web App for the game of Go",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testGame": "mocha ./testing/gameunittest.js -r blanket -R html-cov > ./testing/coverage.html"
+  },
+  "author": "Multiple",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "mongodb": "^2.2.4",
+    "node-random-name": "^1.0.1",
+    "numeric": "^1.2.6",
+    "random-name": "^0.1.1"
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "public/libraries/Game.js"
+      ],
+      "data-cover-never": "node_modules"
+    }
+  }
+}
