@@ -9,5 +9,9 @@ myApp.controller('mainController', function($scope) {
 });
 
 document.getElementById("playGo4AWalk").onclick = function() {
-    window.location.href = "http://michaeldem.one/Projects/Go4AWalk";
+    window.location.href = "Projects/Go4AWalk";
+}
+
+document.getElementById("website").onclick = function() {
+    alert("...You're already here :)");
 }
