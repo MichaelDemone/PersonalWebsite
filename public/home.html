@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+	<head>
+		<title>Michael Demone's Homepage</title>
+		
+		<!--<link rel="stylesheet" href="CSS/main.css"></link>-->
+		
+		<!--<script type="text/javascript" src="JS/main.js"></script>-->
+		<!-- Latest compiled and minified CSS -->
+		<!-- Bootstrap -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
+        <script src="app.js"></script>
+	</head>
+	<body>
+		
+        <div ng-controller="mainController"></div>
+        
+		<!-- Navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Michael Demone</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="navbarItems">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Test<span class="sr-only">(current)</span></a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Current Projects<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#g4aw">Go 4 A Walk</a></li>
+								<li><a href="#">This Website</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects For Learning<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#tbge">The Best Game Ever</a></li>
+								<li><a href="#jumpy">Jumpy The Cube</a></li>
+								<li><a href="#sandbox">Sandbox</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">School Projects<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Go</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Other Projects</a></li>
+						<li><a href="#">About Me</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</nav>
+		
+		<div class="container" id="projects">
+			
+			<div class="row">
+                
+				<div class="col-md-12" style="background-color: #ad99ff">
+                    
+					<h2><center>Active Projects</center></h2>
+                    
+                    <div class="project">
+                        <div class="col-md-8" style="background-color: rgba(114, 0, 211, 0.63)">
+
+                            <h3 id="g4aw">Go 4 A Walk</h3>
+                                <p>This game is a game that 2 friends and I are working on. It a mobile app that I have made playable(ish) on computers.
+                                <br>
+                                The goal of this application is to make people go and walk more by making walks earn them experience and gold. It has 3 seperate screens, the town screen, the walking screen, and the fighting screen.
+                                </p>
+                            <input type="button" id="project1" value="Play!">
+                        </div>
+                        <div class="col-md-4" style="background-color: rgba(114, 0, 211, 0.63)">
+                            <img src="Go4AWalk.PNG" class="img-fluid">
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8" style="background-color: rgba(114, 0, 211, 0.63)">
+                    
+                        <h3 id="asd">Go 4 A Walk</h3>
+                            <p>This game is a game that 2 friends and I are working on. It a mobile app that I have made playable(ish) on computers.
+                            <br>
+                            The goal of this application is to make people go and walk more by making walks earn them experience and gold. It has 3 seperate screens, the town screen, the walking screen, and the fighting screen.
+                            </p>
+                        <input type="button" id="project1" value="Play!">
+                    </div>
+                    <div class="col-md-4" style="background-color: rgba(114, 0, 211, 0.63)">
+                        <img src="UnityGame.PNG" class="img-fluid">
+                    
+                    </div>
+                    
+                    
+				</div>
+				
+				<div class="col-md-12" style="background-color: rgba(0, 255, 0, 0.6)">
+					<h2><center>Projects Used For Learning</center></h2>
+				
+					<h3 id="tbge">The Best Game Ever</h3>
+						<p>I'm going to be totally honest, that title was a little over ambitious and is now a bit of a misnomer. It is far below average at best (but I still love it for how much it has taught me).<br><br>
+						This game was also made with 2 other friends, but was pushed aside because the scope was far too large (rookie mistake, I know).</p>
+				
+					<h3 id="jumpy">Jumpy the Cube</h3>
+						<p>As the title suggests, this is a game of a jumping cube. There is no end or beginning, just a jumping cube. That is it. Enjoy.</p>
+				
+					<h3 id="sandbox">Sandbox</h3>
+						<p>A friend and I developed this game while playing lots of Minecraft (maybe add a hyperlink here) and Terraria (here too). We had high hopes and dreams, but once again the scope was too large and it got pushed off to the side.</p>
+			
+				</div>
+				
+				<div class="col-md-12" style="background-color: #00ceff">School Projects</div>
+			</div>
+		</div>
+	</body>
+</html>
