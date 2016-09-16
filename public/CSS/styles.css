@@ -1,0 +1,21 @@
+.project-section {
+    padding-bottom: 10px        
+}
+
+.learning-section {
+    background-color: rgb(156, 152, 255);
+}
+
+.active-section {
+    background-color: rgba(100, 136, 255, 0.63);
+    
+}
+
+.school-section {
+    background-color: rgb(252, 252, 252);
+}
+
+.pic-me {
+    max-width: 100%;
+    max-height: 100%;
+}
