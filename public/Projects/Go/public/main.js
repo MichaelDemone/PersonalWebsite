@@ -21,11 +21,11 @@ document.onkeydown = function keyHandler(event){
 }
 
 
-var host = "localhost";
-var port = "3000";
+var host = "michaeldem.one";
+var port = "19203";
 var portForAI = port;
-var aihost = "localhost";
-var aiport = "3001";
+var aihost = "michaeldem.one";
+var aiport = "19204";
 
 
 var ui = new UI();

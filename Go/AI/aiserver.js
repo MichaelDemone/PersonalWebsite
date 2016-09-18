@@ -85,6 +85,6 @@ app.post("/okai",function (req,res){
 });// post to ai
 
 
-app.listen(3001, function () {
-    console.log("Listening on port 3001");
+app.listen(19204, function () {
+    console.log("Listening on port 19204");
 });
