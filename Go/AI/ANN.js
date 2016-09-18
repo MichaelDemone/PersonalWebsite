@@ -1,5 +1,5 @@
-var go = require("../public/libraries/go.js");
-var Game = require("../public/libraries/Game.js");
+var go = require("../../public/Projects/Go/public/libraries/go.js");
+var Game = require("../../public/Projects/Go/public/libraries/game.js");
 var numeric = require("numeric");
 var ai = require("./ai.js");
 var randomName = require("node-random-name");
