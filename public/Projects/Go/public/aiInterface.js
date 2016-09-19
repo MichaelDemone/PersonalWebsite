@@ -44,6 +44,7 @@ var aiInterface = function aiInterface(host, path, port){
         var postXhr = new XMLHttpRequest();
         postXhr.open("POST","http://" + aihost + ":" + portForAI + "/ai", true);
         postXhr.setRequestHeader("Content-Type", "application/json");
+        postXhr.setRequestHeader("Access-Control-Allow-Origin", crossOriginAccess);
         postXhr.send(postData);
         
         var thisAI = this;
