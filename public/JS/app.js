@@ -9,10 +9,12 @@ myApp.controller('mainController', function($scope) {
 });
 
 window.onload = function() {
+    
     url = "http://michaeldem.one";
-    console.log(url);
+    
     document.getElementById("play-Go4AWalk").onclick = function() {
-        window.location.href = url + "/Projects/Go4AWalk";
+        window.location.target = "_top";
+        window.location.href = url + "/Project/Go4AWalk";
     }
 
     document.getElementById("play-website").onclick = function() {
@@ -20,15 +22,18 @@ window.onload = function() {
     }  
     
     document.getElementById("play-jumpy").onclick = function () {
-        window.location.href = url +  "/Projects/JumpyTheCube";
+        window.location.target = "_top";
+        window.location.href = "Projects/JumpyTheCube";
     }
     
     document.getElementById("play-go").onclick = function() {
-        window.location.href = url + "/Projects/Go";
+        window.location.target = "_top";
+        window.location.href = "Projects/Go";
     }
     
     document.getElementById("play-sandbox").onclick = function() {
-        window.location.href = url + "/Projects/Sandbox"
+        window.location.target = "_top";
+        window.location.href = "Projects/Sandbox"
     }
 }
 
