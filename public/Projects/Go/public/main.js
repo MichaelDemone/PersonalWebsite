@@ -34,7 +34,7 @@ var game;
 
 var availableAIs = [];
 availableAIs.push(new aiInterface(aihost,'/ai/maxLibs',aiport));
-availableAIs.push(new aiInterface(aihost,'/ai/attackEnemy',airport));
+availableAIs.push(new aiInterface(aihost,'/ai/attackEnemy',aiport));
 availableAIs.push(new aiInterface(aihost,'/ai/formEyes',aiport));
 availableAIs.push(new aiInterface(host,'/okai',aiport));
 availableAIs.push(new aiInterface(host,'/neuralnetwork',aiport));
