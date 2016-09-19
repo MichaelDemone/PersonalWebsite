@@ -1,8 +1,8 @@
 "use strict";
 var numeric = require("numeric");
 //Game stuff:
-var go = require("../../public/Projects/Go/public/libraries/go.js");
-var Game = require("../../public/Projects/Go/public/libraries/game.js");
+var go = require("../../public/Projects/Go/libraries/go.js");
+var Game = require("../../public/Projects/Go/libraries/game.js");
 var fs = require("fs");
 var randomName = require("node-random-name");
 //Load AI stuff:

@@ -75,8 +75,8 @@ function startNewGame(){
 			networkId = _id;
 			game._id = _id;
 			// TODO: Implement pop up screen for this url
-			console.log("Send this url to a friend to play with them: " + host + ":" + port + "/?id=" + _id + "&player=2");
-			var Neturl = host + ":" + port + "/?id=" + _id + "&player=2" ;
+			console.log("Send this url to a friend to play with them: http://michaeldem.one/Projects/Go/?id=" + _id + "&player=2");
+			var Neturl = "http://michaeldem.one/Projects/Go/?id=" + _id + "&player=2" ;
 			
 			ui.showNetworkUrl ( Neturl );
 			

@@ -9,8 +9,10 @@ myApp.controller('mainController', function($scope) {
 });
 
 window.onload = function() {
+    url = window.location.host;
+    console.log(url);
     document.getElementById("play-Go4AWalk").onclick = function() {
-        window.location.href = "Projects/Go4AWalk";
+        window.location.href = url + "/Projects/Go4AWalk";
     }
 
     document.getElementById("play-website").onclick = function() {
@@ -18,15 +20,15 @@ window.onload = function() {
     }  
     
     document.getElementById("play-jumpy").onclick = function () {
-        window.location.href = "Projects/JumpyTheCube";
+        window.location.href = url +  "/Projects/JumpyTheCube";
     }
     
     document.getElementById("play-go").onclick = function() {
-        window.location.href = "Projects/Go/public";
+        window.location.href = url + "/Projects/Go";
     }
     
     document.getElementById("play-sandbox").onclick = function() {
-        window.location.href = "Projects/Sandbox"
+        window.location.href = url + "/Projects/Sandbox"
     }
 }
 
