@@ -10,7 +10,7 @@
 //  setGame, takes id and game, updates the game in the database
 var nwInterface = function nwInterface(){
     
-	
+	var crossOriginAccess = "*";
 	
 	this.setAndCheckGame = function(game, networkId, ui) {
 		
@@ -78,6 +78,7 @@ var nwInterface = function nwInterface(){
         var postXhr = new XMLHttpRequest();
         postXhr.open("POST", "http://" + host + ":" + port + "/checkGame", true);
         postXhr.setRequestHeader("Content-Type", "application/json");
+        postXhr.setRequestHeader("Access-Control-Allow-Origin", crossOriginAccess);
         postXhr.send(postData);
         
         postXhr.onreadystatechange = function(){
@@ -108,6 +109,7 @@ var nwInterface = function nwInterface(){
         var postXhr = new XMLHttpRequest();
         postXhr.open("POST", "http://" + host + ":" + port + "/getGame", true);
         postXhr.setRequestHeader("Content-Type", "application/json");
+        postXhr.setRequestHeader("Access-Control-Allow-Origin", crossOriginAccess);
         postXhr.send(postData);
         
         
@@ -139,6 +141,7 @@ var nwInterface = function nwInterface(){
         var postXhr = new XMLHttpRequest();
         postXhr.open("POST", "http://" + host + ":" + port + "/updateGame", true);
         postXhr.setRequestHeader("Content-Type", "application/json");
+        postXhr.setRequestHeader("Access-Control-Allow-Origin", crossOriginAccess);
         postXhr.send(postData);
         
         postXhr.onreadystatechange = function(){
@@ -166,6 +169,7 @@ var nwInterface = function nwInterface(){
         var postXhr = new XMLHttpRequest();
         postXhr.open("POST","http://" + host + ":" + port + "/createGame", true);
         postXhr.setRequestHeader("Content-Type", "application/json");
+        postXhr.setRequestHeader("Access-Control-Allow-Origin", crossOriginAccess);
         postXhr.send(postData);
         
         postXhr.onreadystatechange = function(){
@@ -196,6 +200,7 @@ var nwInterface = function nwInterface(){
         var postXhr = new XMLHttpRequest();
         postXhr.open("POST","http://" + host + ":" + port + "/endGame", true);
         postXhr.setRequestHeader("Content-Type", "application/json");
+        postXhr.setRequestHeader("Access-Control-Allow-Origin", crossOriginAccess);
         postXhr.send(postData);
         
         postXhr.onreadystatechange = function(){

@@ -21,7 +21,7 @@ document.onkeydown = function keyHandler(event){
 }
 
 
-var host = "michaeldem.one";
+var host = "96.50.29.191";
 var port = "19203";
 var portForAI = port;
 var aihost = "michaeldem.one";

@@ -1,13 +1,17 @@
 "use strict";
 
-var express    = require("express");
+var express = require("express");
 var http = require("http");
+var cors = require("cors");
 var bodyparser = require("body-parser");
 var mongo = require("./MongoDB");
 
 var app = express();
 
-//body parser for parsing requests
+// enable cross origin scripting
+app.use(cors());
+
+// body parser for parsing requests
 app.use(bodyparser.json());
 
 // server static files from the public/ directory.
