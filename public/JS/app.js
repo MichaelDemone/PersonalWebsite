@@ -9,7 +9,7 @@ myApp.controller('mainController', function($scope) {
 });
 
 window.onload = function() {
-    url = window.location.host;
+    url = "http://michaeldem.one";
     console.log(url);
     document.getElementById("play-Go4AWalk").onclick = function() {
         window.location.href = url + "/Projects/Go4AWalk";
