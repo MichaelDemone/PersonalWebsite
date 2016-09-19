@@ -14,7 +14,7 @@ window.onload = function() {
     
     document.getElementById("play-Go4AWalk").onclick = function() {
         window.location.target = "_top";
-        window.location.href = url + "/Project/Go4AWalk";
+        window.location.href = url + "/Projects/Go4AWalk";
     }
 
     document.getElementById("play-website").onclick = function() {
