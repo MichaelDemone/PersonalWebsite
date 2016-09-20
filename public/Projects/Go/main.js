@@ -20,10 +20,10 @@ document.onkeydown = function keyHandler(event){
 }
 
 
-var host = "96.50.29.191";
+var host = "michaeldem.one";
 var port = "19203";
 var portForAI = port;
-var aihost = "96.50.29.191";
+var aihost = "michaeldem.one";
 var aiport = "19204";
 
 
@@ -37,8 +37,6 @@ availableAIs.push(new aiInterface(aihost,'/ai/attackEnemy',aiport));
 availableAIs.push(new aiInterface(aihost,'/ai/formEyes',aiport));
 availableAIs.push(new aiInterface(host,'/okai',aiport));
 availableAIs.push(new aiInterface(host,'/neuralnetwork',aiport));
-
-//var ai = new aiInterface('roberts.seng.uvic.ca','/ai/random','30000');
 
 var network = new nwInterface();
 var networkId = -1;

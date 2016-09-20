@@ -129,6 +129,7 @@ app.post("/endGame", cors(corsOptions), function(req, res) {
 	});
 });
 
+app.options("/ai", cors(corsOptions));
 app.post("/ai", cors(corsOptions), function (req,res){
     console.log("POST Request to: /ai");
     //will receive an object containing "options" and "data"
