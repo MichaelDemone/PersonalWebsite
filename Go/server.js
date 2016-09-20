@@ -9,7 +9,7 @@ var mongo = require("./MongoDB");
 var app = express();
 
 corsOptions = {
-    origin: "http://michaeldem.one";
+    origin: "http://michaeldem.one"
 }
 
 // body parser for parsing requests
