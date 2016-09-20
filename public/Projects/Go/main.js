@@ -4,7 +4,6 @@ main.js is reponsible for handling all user's events of any page.
 
 
 console.log("Initalizing Page....");
-var crossOriginAccess = "*";
 
 //key event handler
 document.onkeydown = function keyHandler(event){
@@ -74,9 +73,8 @@ function startNewGame(){
 		var callback = function(_id) {
 			networkId = _id;
 			game._id = _id;
-			// TODO: Implement pop up screen for this url
-			console.log("Send this url to a friend to play with them: http://michaeldem.one/Projects/Go/?id=" + _id + "&player=2");
-			var Neturl = "http://michaeldem.one/Projects/Go/?id=" + _id + "&player=2" ;
+            
+			var Neturl = "Send this url to a friend to play with them: http://michaeldem.one/Projects/Go/?id=" + _id + "&player=2" ;
 			
 			ui.showNetworkUrl ( Neturl );
 			
