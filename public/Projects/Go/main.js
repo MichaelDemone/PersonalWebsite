@@ -4,7 +4,7 @@ main.js is reponsible for handling all user's events of any page.
 
 
 console.log("Initalizing Page....");
-
+var crossOriginAccess = "*";
 
 //key event handler
 document.onkeydown = function keyHandler(event){

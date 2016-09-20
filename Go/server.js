@@ -8,8 +8,9 @@ var mongo = require("./MongoDB");
 
 var app = express();
 
-// enable cross origin scripting
-app.use(cors());
+corsOptions = {
+    origin: "http://michaeldem.one";
+}
 
 // body parser for parsing requests
 app.use(bodyparser.json());
@@ -29,12 +30,12 @@ db.connect(function(err) {
 /**
  * Handle a request for task data.
  */
-app.get("/data", function (req, res) {
+app.get("/data", cors(corsOptions), function (req, res) {
     console.log("GET Request to: /data");
     res.json(generateBoard()); 
 });
 
-app.post("/checkGame", function(req, res) {
+app.post("/checkGame", cors(corsOptions), function(req, res) {
 	console.log("POST Request to: /checkGame");
 	// Will return the current player of a game
 	// given the game id
@@ -50,7 +51,7 @@ app.post("/checkGame", function(req, res) {
 	});
 });
 
-app.post("/getGame", function(req, res) {
+app.post("/getGame", cors(corsOptions), function(req, res) {
 	console.log("POST Request to: /getGame");
 	// Will return the game associated with a game id
 	// as a JSON object or will return an error message
@@ -69,7 +70,7 @@ app.post("/getGame", function(req, res) {
 	
 });
 
-app.post("/createGame", function(req, res) {
+app.post("/createGame", cors(corsOptions), function(req, res) {
 	console.log("POST Request to: /createGame");
 	// Will create a game given a game object and will return
 	// an id (or an error)
@@ -88,7 +89,7 @@ app.post("/createGame", function(req, res) {
 });
 
 
-app.post("/updateGame", function(req, res) {
+app.post("/updateGame", cors(corsOptions), function(req, res) {
 	console.log("POST Request to: /updateGame");
 	// will update the game given a game object and will return
 	// either "Success" or an error message
@@ -104,7 +105,7 @@ app.post("/updateGame", function(req, res) {
 	});
 });
 
-app.post("/endGame", function(req, res) {
+app.post("/endGame", cors(corsOptions), function(req, res) {
 	console.log("POST Request to: /endGame");
 	// will end the game given an id and will return either 
 	// "Success" or an error message
@@ -124,7 +125,7 @@ app.post("/endGame", function(req, res) {
 	});
 });
 
-app.post("/ai",function (req,res){
+app.post("/ai", cors(corsOptions), function (req,res){
     console.log("POST Request to: /ai");
     //will receive an object containing "options" and "data"
     //then send "data" to path specified by "options" and return the response.

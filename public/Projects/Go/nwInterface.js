@@ -9,8 +9,6 @@
 //  getGame, takes id, returns current the updated board
 //  setGame, takes id and game, updates the game in the database
 var nwInterface = function nwInterface(){
-    
-	var crossOriginAccess = "*";
 	
 	this.setAndCheckGame = function(game, networkId, ui) {
 		
