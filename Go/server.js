@@ -8,7 +8,7 @@ var mongo = require("./MongoDB");
 
 var app = express();
 
-corsOptions = {
+var corsOptions = {
     origin: "http://michaeldem.one"
 }
 
