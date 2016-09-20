@@ -35,6 +35,7 @@ app.get("/data", cors(corsOptions), function (req, res) {
     res.json(generateBoard()); 
 });
 
+app.options("/checkGame", cors(corsOptions));
 app.post("/checkGame", cors(corsOptions), function(req, res) {
 	console.log("POST Request to: /checkGame");
 	// Will return the current player of a game
@@ -51,6 +52,7 @@ app.post("/checkGame", cors(corsOptions), function(req, res) {
 	});
 });
 
+app.options("/getGame", cors(corsOptions));
 app.post("/getGame", cors(corsOptions), function(req, res) {
 	console.log("POST Request to: /getGame");
 	// Will return the game associated with a game id
@@ -70,6 +72,7 @@ app.post("/getGame", cors(corsOptions), function(req, res) {
 	
 });
 
+app.options("/createGame", cors(corsOptions));
 app.post("/createGame", cors(corsOptions), function(req, res) {
 	console.log("POST Request to: /createGame");
 	// Will create a game given a game object and will return
@@ -88,7 +91,7 @@ app.post("/createGame", cors(corsOptions), function(req, res) {
 	
 });
 
-
+app.options("/updateGame", cors(corsOptions));
 app.post("/updateGame", cors(corsOptions), function(req, res) {
 	console.log("POST Request to: /updateGame");
 	// will update the game given a game object and will return
@@ -105,6 +108,7 @@ app.post("/updateGame", cors(corsOptions), function(req, res) {
 	});
 });
 
+app.options("/endGame", cors(corsOptions));
 app.post("/endGame", cors(corsOptions), function(req, res) {
 	console.log("POST Request to: /endGame");
 	// will end the game given an id and will return either 
