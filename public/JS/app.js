@@ -3,9 +3,6 @@ var myApp = angular.module('myApp', []);
 
 myApp.controller('mainController', function($scope) {
     
-    $scope.name = 'John Doe';
-    console.log($scope);
-    
 });
 
 window.onload = function() {
@@ -27,8 +24,12 @@ window.onload = function() {
     }
     
     document.getElementById("play-sandbox").onclick = function() {
-        window.location.href = "Projects/Sandbox"
+        window.location.href = "Projects/Sandbox";
     }
+	
+	document.getElementById("play-circuit").onclick = function() {
+		window.location.href = "Projects/CircuitSim";
+	}
 }
 
 $(function() {
@@ -36,5 +37,6 @@ $(function() {
     $(".website-section").matchHeight();
     $(".jumpy-section").matchHeight();
     $(".sandbox-section").matchHeight();
+	$(".circuit-section").matchHeight();
     $(".go-section").matchHeight();
 });
