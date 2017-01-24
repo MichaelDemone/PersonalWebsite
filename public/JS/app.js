@@ -30,6 +30,10 @@ window.onload = function() {
 	document.getElementById("play-circuit").onclick = function() {
 		window.location.href = "Projects/CircuitSim";
 	}
+    
+    document.getElementById("play-QuanSized").onclick = function() {
+		window.location.href = "Projects/QuanSized";
+	}
 }
 
 $(function() {
@@ -39,4 +43,5 @@ $(function() {
     $(".sandbox-section").matchHeight();
 	$(".circuit-section").matchHeight();
     $(".go-section").matchHeight();
+    $(".quanSized-section").matchHeight();
 });
